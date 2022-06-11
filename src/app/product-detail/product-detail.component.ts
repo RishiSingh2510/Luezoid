@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { StdioNull } from 'child_process';
 
 @Component({
   selector: 'app-product-detail',

@@ -10,6 +10,7 @@ export class ProductListComponent implements OnInit {
 
   productList: any[] = []
   pagination = { page: 1, pages: 1, perPage: 0 }
+  pageArr = []
   constructor(private _productService: ProductsService) { }
 
   ngOnInit(): void {
@@ -23,6 +24,7 @@ export class ProductListComponent implements OnInit {
         this.productList = resp.items;
         this.pagination.page = parseInt(resp.page)
         this.pagination.pages = resp.pages
+        this.pageArr.length = resp.pages
       })
   }
 
