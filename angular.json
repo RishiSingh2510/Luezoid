@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "luezoid"
+  "defaultProject": "luezoid",
+  "cli": {
+    "analytics": "ecbefb63-7d54-4f57-a5dd-8ee8864cbdbb"
+  }
 }
