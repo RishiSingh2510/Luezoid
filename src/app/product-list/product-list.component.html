@@ -2,13 +2,13 @@
     <div class="text-muted">{{productList.length}} Records Found</div>
     <nav aria-label="...">
         <ul class="pagination">
-            <li class="page-item" [class.disabled]="pagination.page <= 1" (click)="previousPage()">
+            <li class="page-item" [disabled]="pagination.page <= 1" (click)="previousPage()">
                 <a class="page-link">Previous</a>
             </li>
             <li *ngFor="let item of pageArr; let i=index" class="page-item" [class.active]="pagination.page==i+1">
                 <a class="page-link">{{i+1}}</a>
             </li>
-            <li class="page-item" [class.disabled]="pagination.page==pagination.pages" (click)="nextPage()">
+            <li class="page-item" [disabled]="pagination.page==pagination.pages" (click)="nextPage()">
                 <a class="page-link">Next</a>
             </li>
         </ul>
